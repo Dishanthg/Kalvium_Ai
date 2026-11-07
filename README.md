@@ -22,7 +22,8 @@ A full-stack educational web application designed to synthesize lesson plans wit
 ### Installation
 1. Clone the repository and navigate into the workspace directory:
    ```bash
-   cd /path/to/project
+   https://github.com/Dishanthg/Kalvium_Ai.git
+   cd /path/Kalvium_Ai.git
    ```
 2. Install dependencies:
    ```bash
