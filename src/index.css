@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Dark theme is default as specified: "Dark theme (default)" */
+    --bg: #0A0D0B;
+    --surface: #111613;
+    --surface-2: #171E1A;
+    --border: #243029;
+    --text: #F5F7F6;
+    --text-muted: #9BA9A1;
+    --green: #22C55E;
+    --green-hover: #16A34A;
+    --green-soft: rgba(34, 197, 94, 0.12);
+    --on-green: #04110A;
+
+    --amber: #F59E0B;
+    --amber-soft: rgba(245, 158, 11, 0.12);
+    --red: #EF4444;
+    --red-soft: rgba(239, 68, 68, 0.12);
+
+    --inverse-bg: #FFFFFF;
+    --inverse-text: #0A0D0B;
+  }
+
+  html.light {
+    --bg: #F6F8F7;
+    --surface: #FFFFFF;
+    --surface-2: #EEF2F0;
+    --border: #DDE4E0;
+    --text: #0A0D0B;
+    --text-muted: #55635B;
+    --green: #16A34A;
+    --green-hover: #15803D;
+    --green-soft: rgba(22, 163, 74, 0.10);
+    --on-green: #FFFFFF;
+
+    --amber: #F59E0B;
+    --amber-soft: rgba(245, 158, 11, 0.10);
+    --red: #EF4444;
+    --red-soft: rgba(239, 68, 68, 0.10);
+
+    --inverse-bg: #0A0D0B;
+    --inverse-text: #FFFFFF;
+  }
+
+  html.dark {
+    --bg: #0A0D0B;
+    --surface: #111613;
+    --surface-2: #171E1A;
+    --border: #243029;
+    --text: #F5F7F6;
+    --text-muted: #9BA9A1;
+    --green: #22C55E;
+    --green-hover: #16A34A;
+    --green-soft: rgba(34, 197, 94, 0.12);
+    --on-green: #04110A;
+
+    --amber: #F59E0B;
+    --amber-soft: rgba(245, 158, 11, 0.12);
+    --red: #EF4444;
+    --red-soft: rgba(239, 68, 68, 0.12);
+
+    --inverse-bg: #FFFFFF;
+    --inverse-text: #0A0D0B;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.01em;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom utility classes mapped directly to token variables */
+.bg-app-bg { background-color: var(--bg); }
+.bg-app-surface { background-color: var(--surface); }
+.bg-app-surface-2 { background-color: var(--surface-2); }
+.border-app-border { border-color: var(--border); }
+.text-app-text { color: var(--text); }
+.text-app-muted { color: var(--text-muted); }
+.bg-app-green { background-color: var(--green); }
+.bg-app-green-soft { background-color: var(--green-soft); }
+.text-app-green { color: var(--green); }
+.text-app-on-green { color: var(--on-green); }
+.border-app-green { border-color: var(--green); }
+
+/* Focus ring standard */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}

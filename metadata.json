@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered Lesson Creation Tool",
+  "description": "Production-ready 45-minute lesson generation with search grounding, dual-layer QC verification, interactive review, diff resolution, and multi-format export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
